@@ -6,5 +6,5 @@ git clone git@github.com:rghose/chat-room-nodejs.git $install_dir
 cd "$install_dir"
 npm install
 cd -
-ln -s "$install_dir" latest
+ln -sfn "$install_dir" latest
 pm2 restart ecosystem.config.js --env production
