@@ -1,6 +1,7 @@
 var app = require('express')();
 var http = require('http').createServer(app);
-var io = require('socket.io')(http);
+const sOptions = {};
+var io = require('socket.io')(http, sOptions);
 
 MessageQueue = require('./MessageQueue');
 var mq = new MessageQueue(100);
